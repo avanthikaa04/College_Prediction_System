@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Predictor</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/free-vector/hand-drawn-back-school-background_23-2149464866.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726531200&semt=ais_hybrid') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 500px;
+        }
+
+        .quote-box {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            border-left: 5px solid #333;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #333;
+        }
+
+        .quote-box p {
+            margin: 0;
+        }
+
+        .form-box h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+            text-align: center;
+        }
+
+        .form-box input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form-box input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .form-box input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="quote-box">
+            <p>“Research shows that there is only half as much variation in student achievement between schools as there is among classrooms in the same school. If you want your child to get the best education possible, it is actually more important to get him assigned to a great teacher than to a great school.”</p>
+        </div>
+        
+        <div class="form-box">
+            <h2>College Predictor</h2>
+            <!-- <form action="submit.php" method="post"> -->
+            <form action="./colleges.html">
+                <input type="text" name="board_percentage" placeholder="Board's Percentage" required>
+                <input type="text" name="jee_score" placeholder="JEE Score" required>
+                <input type="text" name="bits_score" placeholder="BITS Score" required>
+                <input type="text" name="srmjeee_score" placeholder="SRMJEEE Score" required>
+                <input type="submit" value="Predict College">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
